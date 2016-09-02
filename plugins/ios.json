@@ -1,0 +1,40 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.sensestudios.zoomintv.wildhitz"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.sensestudios.zoomintv.wildhitz"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "com.sensestudios.zoomintv.wildhitz"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.sensestudios.zoomintv.wildhitz"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.sensestudios.zoomintv.wildhitz"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.sensestudios.zoomintv.wildhitz"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.sensestudios.zoomintv.wildhitz"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.sensestudios.zoomintv.wildhitz"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.sensestudios.zoomintv.wildhitz"
+        }
+    }
+}
