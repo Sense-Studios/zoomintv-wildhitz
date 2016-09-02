@@ -19,12 +19,14 @@
 
 
 function initPushwoosh() {
+  console.log("init puusssh!")
   var pushwoosh = cordova.require("pushwoosh-cordova-plugin.PushNotification");
 
   // Should be called before pushwoosh.onDeviceReady
   document.addEventListener('push-notification', function(event) {
     var notification = event.notification;
     // handle push open here
+    console.log("has notification", event)
   });
 
   // Initialize Pushwoosh. This will trigger all pending push notifications on start.
@@ -38,9 +40,12 @@ function initPushwoosh() {
     function(status) {
       var pushToken = status.pushToken;
         // handle successful registration here
+        console.log("has status", status)
+        console.log("has token", pushtoken)
     },
     function(status) {
       // handle registration error here
+        console.log("has token", status)
     }
   );
 }
@@ -61,6 +66,7 @@ var app = {
         document.addEventListener('push-notification', function(event) {
           var notification = event.notification;
           // handle push open here
+          console.log("push has received etwas")
           alert("you have received a push event and opens")
         });
 
@@ -72,6 +78,8 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+
+        console.log('init push')
         initPushwoosh();
 
         //var url = "http://wildhitz.nl"
