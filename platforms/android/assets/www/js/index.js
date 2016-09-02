@@ -16,6 +16,36 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+/*
+function initPushwoosh() {
+  var pushwoosh = cordova.require("pushwoosh-cordova-plugin.PushNotification");
+
+  // Should be called before pushwoosh.onDeviceReady
+  document.addEventListener('push-notification', function(event) {
+    var notification = event.notification;
+    // handle push open here
+  });
+
+  // Initialize Pushwoosh. This will trigger all pending push notifications on start.
+  pushwoosh.onDeviceReady({
+    appid: "E54C2-FD03B",
+    projectid: "wildhitz-142009",    // android only
+    serviceName: "MPNS_SERVICE_NAME" // windows only
+  });
+
+  pushwoosh.registerDevice(
+    function(status) {
+      var pushToken = status.pushToken;
+        // handle successful registration here
+    },
+    function(status) {
+      // handle registration error here
+    }
+  );
+}
+*/
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -26,6 +56,13 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
+        // should be called before pushwoosh.onDeviceReady
+        //document.addEventListener('push-notification', function(event) {
+          //var notification = event.notification;
+          // handle push open here
+          //alert("you have received a push event and opens")
+        //});
+
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     // deviceready Event Handler
@@ -34,15 +71,33 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        //initPushwoosh();
+
+        //var url = "http://wildhitz.nl"
+        //var url = "http://wildhitz.nl/wildhitzplayer/#/267e0609b3e6832fe9378ac5642bb209"
+        var url = "http://wildhitz.nl/ios.html"
+        $.ajax({
+            url: url,
+            type: 'GET',
+            complete: function(e, xhr, settings){
+               if(e.status === 200){
+                  document.getElementById("content_frame").src = url;
+                  document.getElementsByTagName('body')[0].style.backgroundImage = 'url("")'
+                  document.getElementsByTagName('body')[0].style.backgroundColor = '#000000'
+               }else{
+                  $('#could_not_connect').fadeIn('slow')
+               }
+            }
+        });
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
+        //var listeningElement = parentElement.querySelector('.listening');
+        //var receivedElement = parentElement.querySelector('.received');
 
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
+        //listeningElement.setAttribute('style', 'display:none;');
+        //receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
     }

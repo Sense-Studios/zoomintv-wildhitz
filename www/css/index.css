@@ -16,6 +16,23 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+ /* #e64024 */
+
+ @font-face {
+   font-family: 'Raleway';
+   src: url('fonts/Raleway-Regular.otf') format('truetype');
+   font-weight: normal;
+   /*font-style: normal;*/
+ }
+
+ @font-face {
+   font-family: 'Raleway';
+   src: url('fonts/Raleway-Bold.otf') format('truetype');
+   font-weight: bold;
+   /*font-style: normal;*/
+ }
+
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
@@ -24,6 +41,8 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+
+    /*
     background-color:#E4E4E4;
     background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
     background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
@@ -36,6 +55,7 @@ body {
         color-stop(0.51, #E4E4E4)
     );
     background-attachment:fixed;
+    */
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
     height:100%;
@@ -43,6 +63,45 @@ body {
     padding:0px;
     text-transform:uppercase;
     width:100%;
+    overflow:hidden;
+    background-image: url('../img/bgr.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.could_not_connect {
+  position: absolute;
+  background-image: url('../img/no_load.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  top: 10%;
+  left: 16%;
+  width: 68%;
+  height: 68%;
+  display: none;
+
+  /*
+
+  background-color: #F5f5f5;
+  box-shadow: 2px 0px 8px rgba(42,42,42,0.42);
+  padding:10px 15px;
+  font-family: Raleway;
+  font-weight: bold;
+  letter-spacing: 1px;
+  width: 320px;
+  top: 35%;
+  left: calc( 50% - 160px ) ;
+  border-radius: 5px;
+  text-align:center;
+  display:none;
+  */
+}
+
+#content_frame {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 
 /* Portrait layout (default) */
@@ -102,13 +161,13 @@ h1 {
     50% { opacity: 0.4; }
     to { opacity: 1.0; }
 }
- 
+
 @-webkit-keyframes fade {
     from { opacity: 1.0; }
     50% { opacity: 0.4; }
     to { opacity: 1.0; }
 }
- 
+
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
