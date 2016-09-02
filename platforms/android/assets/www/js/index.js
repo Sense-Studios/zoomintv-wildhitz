@@ -17,7 +17,7 @@
  * under the License.
  */
 
-/*
+
 function initPushwoosh() {
   var pushwoosh = cordova.require("pushwoosh-cordova-plugin.PushNotification");
 
@@ -44,24 +44,25 @@ function initPushwoosh() {
     }
   );
 }
-*/
+
 
 var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
     },
+
     // Bind Event Listeners
     //
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         // should be called before pushwoosh.onDeviceReady
-        //document.addEventListener('push-notification', function(event) {
-          //var notification = event.notification;
+        document.addEventListener('push-notification', function(event) {
+          var notification = event.notification;
           // handle push open here
-          //alert("you have received a push event and opens")
-        //});
+          alert("you have received a push event and opens")
+        });
 
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
@@ -71,7 +72,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        //initPushwoosh();
+        initPushwoosh();
 
         //var url = "http://wildhitz.nl"
         //var url = "http://wildhitz.nl/wildhitzplayer/#/267e0609b3e6832fe9378ac5642bb209"
