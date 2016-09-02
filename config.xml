@@ -72,7 +72,6 @@
 
     <!-- build tool (pushwoos) -->
     <!-- <preference name="android-build-tool" value="gradle" /> -->
-    <preference name="android-build-tool" value="gradle" />
 
     <!-- splashes and icons -->
     <icon src="www/icon.png" />
@@ -96,6 +95,7 @@
         <splash density="land-xxhdpi" src="www/res/screen/android/drawable-land-xxhdpi-screen.png" />
         <splash density="land-xxxhdpi" src="www/res/screen/android/drawable-land-xxxhdpi-screen.png" />
         -->
+
         <splash gap:platform="android" gap:qualifier="land-ldpi" src="www/res/screen/android/screen-ldpi-landscape.png" />
         <splash gap:platform="android" gap:qualifier="land-mdpi" src="www/res/screen/android/screen-mdpi-landscape.png" />
         <splash gap:platform="android" gap:qualifier="land-hdpi" src="www/res/screen/android/screen-hdpi-landscape.png" />
@@ -104,6 +104,7 @@
         <splash density="port-xxhdpi" src="www/res/screen/android/drawable-port-xxhdpi-screen.png" />
         <splash density="port-xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
         -->
+
     </platform>
 
 
