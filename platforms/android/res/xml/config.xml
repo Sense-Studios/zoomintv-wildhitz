@@ -70,7 +70,7 @@
     <preference name="show-splash-screen-spinner" value="true" />
     <preference name="auto-hide-splash-screen" value="false" />
     <preference name="SplashScreen" value="screen" />
-    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="SplashScreenDelay" value="3" />
     <icon src="www/icon.png" />
     <splash height="1136" src="www/splash.png" width="640" />
     <gap:config-file parent="UIStatusBarHidden" platform="ios">

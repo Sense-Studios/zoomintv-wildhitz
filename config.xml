@@ -69,7 +69,7 @@
     <preference name="show-splash-screen-spinner" value="true" />
     <preference name="auto-hide-splash-screen" value="false" />
     <preference name="SplashScreen" value="screen" />
-    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="SplashScreenDelay" value="3" />
 
     <!-- build tool (pushwoos) -->
     <!-- <preference name="android-build-tool" value="gradle" /> -->
