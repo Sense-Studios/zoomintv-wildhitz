@@ -36,7 +36,7 @@
     <plugin name="cordova-plugin-whitelist" source="npm" />
 
     <!-- external plugins -->
-    <plugin name="org.apache.cordova.splashscreen" source="pgb" spec="1.0.0" />
+    <plugin name="org.apache.cordova.splashscreen" source="pgb" spec="1.0.0" /> 
     <plugin name="com.phonegap.plugin.statusbar" spec="1.1.0" source="pgb" />
 
     <!-- which is it?!! -->
@@ -67,7 +67,7 @@
 
     <!-- splash -->
     <preference name="show-splash-screen-spinner" value="true" />
-    <preference name="auto-hide-splash-screen" value="false" />
+    <preference name="auto-hide-splash-screen" value="true" />
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3" />
 
