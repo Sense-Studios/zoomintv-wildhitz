@@ -69,6 +69,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <icon gap:platform="ios" height="87" src="www/res/icon/ios/icon-small@3x.png" width="87" />
     <icon gap:platform="ios" height="57" src="www/res/icon/ios/icon-57.png" width="57" />
     <icon gap:platform="ios" height="72" src="www/res/icon/ios/icon-72.png" width="72" />
     <icon gap:platform="ios" height="114" src="www/res/icon/ios/icon-57-2x.png" width="114" />
