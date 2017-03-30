@@ -81,7 +81,7 @@ var app = {
 
         //var url = "http://wildhitz.nl"
         //var url = "http://wildhitz.nl/wildhitzplayer/#/267e0609b3e6832fe9378ac5642bb209"
-        var url = "http://wildhitz.nl/ios.html"
+        var url = "//wildhitz.nl/ios.html"
         $.ajax({
             url: url,
             type: 'GET',
