@@ -79,9 +79,6 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
 
-        console.log('init push')
-        initPushwoosh();
-
         //var url = "http://wildhitz.nl"
         //var url = "http://wildhitz.nl/wildhitzplayer/#/267e0609b3e6832fe9378ac5642bb209"
         var url = "http://wildhitz.nl/ios.html"
@@ -98,6 +95,9 @@ var app = {
                }
             }
         });
+
+        console.log('init push')
+        initPushwoosh();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
