@@ -27,6 +27,12 @@
         },
         "cordova-plugin-media": {
             "PACKAGE_NAME": "com.sensestudios.zoomintv.wildhitz"
+        },
+        "pushwoosh-cordova-plugin": {
+            "LOG_LEVEL": "DEBUG",
+            "IOS_FOREGROUND_ALERT_TYPE": "NONE",
+            "ANDROID_FOREGROUND_PUSH": "false",
+            "PACKAGE_NAME": "com.sensestudios.zoomintv.wildhitz"
         }
     },
     "dependent_plugins": {

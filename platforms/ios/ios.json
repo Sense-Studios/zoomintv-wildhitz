@@ -43,6 +43,10 @@
                         {
                             "xml": "<feature name=\"Media\"><param name=\"ios-package\" value=\"CDVSound\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"PushNotification\"><param name=\"ios-package\" value=\"PushNotification\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -52,6 +56,48 @@
                     "NSLocationWhenInUseUsageDescription": [
                         {
                             "xml": "<string />",
+                            "count": 1
+                        }
+                    ],
+                    "Pushwoosh_LOG_LEVEL": [
+                        {
+                            "xml": "<string>DEBUG</string>",
+                            "count": 1
+                        }
+                    ],
+                    "Pushwoosh_ALERT_TYPE": [
+                        {
+                            "xml": "<string>NONE</string>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "undefined": {
+                "parents": {
+                    "undefined": [
+                        {
+                            "xml": "<access origin=\"*.pushwoosh.com\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "*/Entitlements-Debug.plist": {
+                "parents": {
+                    "aps-environment": [
+                        {
+                            "xml": "<string>development</string>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "*/Entitlements-Release.plist": {
+                "parents": {
+                    "aps-environment": [
+                        {
+                            "xml": "<string>production</string>",
                             "count": 1
                         }
                     ]
@@ -85,6 +131,12 @@
             "PACKAGE_NAME": "com.sensestudios.zoomintv.wildhitz"
         },
         "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.sensestudios.zoomintv.wildhitz"
+        },
+        "pushwoosh-cordova-plugin": {
+            "LOG_LEVEL": "DEBUG",
+            "IOS_FOREGROUND_ALERT_TYPE": "NONE",
+            "ANDROID_FOREGROUND_PUSH": "false",
             "PACKAGE_NAME": "com.sensestudios.zoomintv.wildhitz"
         }
     },
@@ -344,6 +396,14 @@
             "clobbers": [
                 "window.Media"
             ]
+        },
+        {
+            "file": "plugins/pushwoosh-cordova-plugin/www/PushNotification.js",
+            "id": "pushwoosh-cordova-plugin.PushNotification",
+            "pluginId": "pushwoosh-cordova-plugin",
+            "clobbers": [
+                "plugins.pushNotification"
+            ]
         }
     ],
     "plugin_metadata": {
@@ -355,6 +415,7 @@
         "cordova-plugin-inappbrowser": "1.3.0",
         "cordova-plugin-compat": "1.0.0",
         "cordova-plugin-file": "4.2.0",
-        "cordova-plugin-media": "2.2.0"
+        "cordova-plugin-media": "2.2.0",
+        "pushwoosh-cordova-plugin": "6.5.0"
     }
 }

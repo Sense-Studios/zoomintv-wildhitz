@@ -206,6 +206,13 @@ module.exports = [
             "navigator.notification",
             "navigator"
         ]
+    },
+    {
+        "file": "plugins/pushwoosh-cordova-plugin/www/PushNotification.js",
+        "id": "pushwoosh-cordova-plugin.PushNotification",
+        "clobbers": [
+            "plugins.pushNotification"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -219,7 +226,8 @@ module.exports.metadata =
     "cordova-plugin-splashscreen": "3.2.2",
     "cordova-plugin-statusbar": "2.1.3",
     "cordova-plugin-vibration": "2.1.1",
-    "cordova-plugin-whitelist": "1.2.2"
+    "cordova-plugin-whitelist": "1.2.2",
+    "pushwoosh-cordova-plugin": "6.5.0"
 };
 // BOTTOM OF METADATA
 });

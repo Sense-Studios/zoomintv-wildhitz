@@ -27,6 +27,12 @@
 		47F561C3B6524A38A55EF077 /* CDVLocalFilesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD7E846696B47B2B5876497 /* CDVLocalFilesystem.m */; };
 		641DE2B33B574909BE0DEB11 /* CDVAssetLibraryFilesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = B3369377B2BC47648B7D4E96 /* CDVAssetLibraryFilesystem.m */; };
 		334E2C2231434481BC8767B4 /* CDVSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 687E331E64CE4CACBA7ADEB7 /* CDVSound.m */; };
+		FCBE5CA194A146FDA4DC3947 /* PushNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F888CA04FE4A61BA4AB3F1 /* PushNotification.m */; };
+		0C4CDAE542EA40DEB725051C /* Pushwoosh in Resources */ = {isa = PBXBuildFile; fileRef = 46958F5A0B374149B8ABFB27 /* Pushwoosh */; };
+		0A3B6EFFC9D0430286790404 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980BCA5D3C8A49F592495D2D /* Security.framework */; };
+		404F28D0317244F3BFCA9474 /* Storekit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2006112B84B142DDA4CEC11F /* Storekit.framework */; };
+		3635C40D15204172A434573C /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0D349502A548D39A3C5365 /* libstdc++.dylib */; };
+		9D1590FF42004FE5A6188765 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 988C25FC46F84FDC887E4C9E /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +94,15 @@
 		1DE6743A9C0B41DDA97E5751 /* CDVAssetLibraryFilesystem.h */ = {isa = PBXFileReference; name = "CDVAssetLibraryFilesystem.h"; path = "cordova-plugin-file/CDVAssetLibraryFilesystem.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		687E331E64CE4CACBA7ADEB7 /* CDVSound.m */ = {isa = PBXFileReference; name = "CDVSound.m"; path = "cordova-plugin-media/CDVSound.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		CFD804A5866B425FB5858745 /* CDVSound.h */ = {isa = PBXFileReference; name = "CDVSound.h"; path = "cordova-plugin-media/CDVSound.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		84F888CA04FE4A61BA4AB3F1 /* PushNotification.m */ = {isa = PBXFileReference; name = "PushNotification.m"; path = "pushwoosh-cordova-plugin/ios/PushNotification.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		46958F5A0B374149B8ABFB27 /* Pushwoosh */ = {isa = PBXFileReference; name = "Pushwoosh"; path = "WILDHITZ/Plugins/pushwoosh-cordova-plugin/Pushwoosh"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F4880FC607444250AA96306E /* PushNotification.h */ = {isa = PBXFileReference; name = "PushNotification.h"; path = "pushwoosh-cordova-plugin/ios/PushNotification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		8EA0D7CE46F84F899ABD0478 /* PushNotificationManager.h */ = {isa = PBXFileReference; name = "PushNotificationManager.h"; path = "pushwoosh-cordova-plugin/ios/PushNotificationManager.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		8D697B5939FC4CDD81505A4B /* PWLog.h */ = {isa = PBXFileReference; name = "PWLog.h"; path = "pushwoosh-cordova-plugin/ios/PWLog.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		980BCA5D3C8A49F592495D2D /* Security.framework */ = {isa = PBXFileReference; name = "Security.framework"; path = "System/Library/Frameworks/Security.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		2006112B84B142DDA4CEC11F /* Storekit.framework */ = {isa = PBXFileReference; name = "Storekit.framework"; path = "System/Library/Frameworks/Storekit.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		3B0D349502A548D39A3C5365 /* libstdc++.dylib */ = {isa = PBXFileReference; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
+		988C25FC46F84FDC887E4C9E /* libz.dylib */ = {isa = PBXFileReference; name = "libz.dylib"; path = "usr/lib/libz.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +113,11 @@
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				4265274542DF47FC96DF85DC /* AudioToolbox.framework in Frameworks */,
 				DC49AD8C6A98484F83E1703E /* CoreLocation.framework in Frameworks */,
+				0C4CDAE542EA40DEB725051C /* Pushwoosh in Resources */,
+				0A3B6EFFC9D0430286790404 /* Security.framework in Frameworks */,
+				404F28D0317244F3BFCA9474 /* Storekit.framework in Frameworks */,
+				3635C40D15204172A434573C /* libstdc++.dylib in Frameworks */,
+				9D1590FF42004FE5A6188765 /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +189,11 @@
 			children = (
 				89836CB940914EAE8FB7872D /* AudioToolbox.framework */,
 				824DD3E91F0B48E48C27C363 /* CoreLocation.framework */,
+				46958F5A0B374149B8ABFB27 /* Pushwoosh */,
+				980BCA5D3C8A49F592495D2D /* Security.framework */,
+				2006112B84B142DDA4CEC11F /* Storekit.framework */,
+				3B0D349502A548D39A3C5365 /* libstdc++.dylib */,
+				988C25FC46F84FDC887E4C9E /* libz.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -214,6 +239,10 @@
 				1DE6743A9C0B41DDA97E5751 /* CDVAssetLibraryFilesystem.h */,
 				687E331E64CE4CACBA7ADEB7 /* CDVSound.m */,
 				CFD804A5866B425FB5858745 /* CDVSound.h */,
+				84F888CA04FE4A61BA4AB3F1 /* PushNotification.m */,
+				F4880FC607444250AA96306E /* PushNotification.h */,
+				8EA0D7CE46F84F899ABD0478 /* PushNotificationManager.h */,
+				8D697B5939FC4CDD81505A4B /* PWLog.h */,
 			);
 			name = Plugins;
 			path = "WILDHITZ/Plugins";
@@ -338,6 +367,7 @@
 				47F561C3B6524A38A55EF077 /* CDVLocalFilesystem.m in Sources */,
 				641DE2B33B574909BE0DEB11 /* CDVAssetLibraryFilesystem.m in Sources */,
 				334E2C2231434481BC8767B4 /* CDVSound.m in Sources */,
+				FCBE5CA194A146FDA4DC3947 /* PushNotification.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +402,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_NAME = "WILDHITZ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/WILDHITZ/Plugins/pushwoosh-cordova-plugin\"",
+				);
 			};
 			name = Debug;
 		};
@@ -392,6 +426,10 @@
 				INFOPLIST_FILE = "WILDHITZ/WILDHITZ-Info.plist";
 				PRODUCT_NAME = "WILDHITZ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/WILDHITZ/Plugins/pushwoosh-cordova-plugin\"",
+				);
 			};
 			name = Release;
 		};
