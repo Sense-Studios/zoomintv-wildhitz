@@ -1,5 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.sensestudios.zoomintv.wildhitz" android-versionCode="93" version="1.2.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget
+  id="com.sensestudios.zoomintv.wildhitz"
+  android-versionCode="93"
+  version="1.2.0"
+  xmlns="http://www.w3.org/ns/widgets"
+  xmlns:gap="http://phonegap.com/ns/1.0">
     <name>WILDHITZ</name>
     <description>
         The New Music Network.
@@ -36,7 +41,7 @@
     <plugin name="cordova-plugin-whitelist" source="npm" />
 
     <!-- external plugins -->
-    <plugin name="org.apache.cordova.splashscreen" source="pgb" spec="1.0.0" />
+    <!-- <plugin name="org.apache.cordova.splashscreen" source="pgb" spec="1.0.0" /> -->
     <plugin name="com.phonegap.plugin.statusbar" spec="1.1.0" source="pgb" />
 
     <!-- which is it?!! -->
