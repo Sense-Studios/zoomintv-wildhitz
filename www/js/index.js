@@ -79,14 +79,18 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
 
-        //var url = "http://wildhitz.nl"
-        //var url = "http://wildhitz.nl/wildhitzplayer/#/267e0609b3e6832fe9378ac5642bb209"
-        var url = "http://wildhitz.nl/ios.html"
+        // var url = "http://wildhitz.nl"
+        // var url = "http://wildhitz.nl/wildhitzplayer/#/267e0609b3e6832fe9378ac5642bb209"
+        // var url = "http://wildhitz.nl/ios.html"
+        var url = "http://labs.sense-studios.com/zoomintv/liverail/index.html"
+        console.log("load: ", url)
         $.ajax({
             url: url,
             type: 'GET',
             complete: function(e, xhr, settings){
+              console.log('complete:', e, xhr, settings)
                if(e.status === 200){
+                  console.log("go! go! go!")
                   document.getElementById("content_frame").src = url;
                   document.getElementsByTagName('body')[0].style.backgroundImage = 'url("")'
                   document.getElementsByTagName('body')[0].style.backgroundColor = '#000000'
