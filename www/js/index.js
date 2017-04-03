@@ -96,8 +96,8 @@ var app = {
             }
         });
 
-        console.log('init push')
-        initPushwoosh();
+        //console.log('init push')
+        //initPushwoosh();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
