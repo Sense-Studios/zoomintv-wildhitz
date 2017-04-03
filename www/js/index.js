@@ -79,10 +79,9 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
 
-        // var url = "http://wildhitz.nl"
-        // var url = "http://wildhitz.nl/wildhitzplayer/#/267e0609b3e6832fe9378ac5642bb209"
-        // var url = "http://wildhitz.nl/ios.html"
-        var url = "http://labs.sense-studios.com/zoomintv/liverail/index.html"
+        //var url = "http://wildhitz.nl"
+        //var url = "http://wildhitz.nl/wildhitzplayer/#/267e0609b3e6832fe9378ac5642bb209"
+        var url = "http://wildhitz.nl/ios.html"
         console.log("load: ", url)
         $.ajax({
             url: url,
@@ -100,8 +99,8 @@ var app = {
             }
         });
 
-        //console.log('init push')
-        //initPushwoosh();
+        console.log('now, init push')
+        initPushwoosh();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {

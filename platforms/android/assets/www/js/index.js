@@ -82,11 +82,14 @@ var app = {
         //var url = "http://wildhitz.nl"
         //var url = "http://wildhitz.nl/wildhitzplayer/#/267e0609b3e6832fe9378ac5642bb209"
         var url = "http://wildhitz.nl/ios.html"
+        console.log("load: ", url)
         $.ajax({
             url: url,
             type: 'GET',
             complete: function(e, xhr, settings){
+              console.log('complete:', e, xhr, settings)
                if(e.status === 200){
+                  console.log("go! go! go!")
                   document.getElementById("content_frame").src = url;
                   document.getElementsByTagName('body')[0].style.backgroundImage = 'url("")'
                   document.getElementsByTagName('body')[0].style.backgroundColor = '#000000'
@@ -96,8 +99,8 @@ var app = {
             }
         });
 
-        //console.log('init push')
-        //initPushwoosh();
+        console.log('now, init push')
+        initPushwoosh();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
