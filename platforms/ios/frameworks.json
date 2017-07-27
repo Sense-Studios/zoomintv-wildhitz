@@ -1,6 +1,6 @@
 {
-    "AudioToolbox.framework": 1,
     "CoreLocation.framework": 2,
+    "AudioToolbox.framework": 1,
     "Security.framework": 1,
     "Storekit.framework": 1,
     "libstdc++.dylib": 1,

@@ -7,6 +7,15 @@
         "files": {}
     },
     "installed_plugins": {
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.sensestudios.zoomintv.wildhitz"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.sensestudios.zoomintv.wildhitz"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.sensestudios.zoomintv.wildhitz"
+        },
         "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "com.sensestudios.zoomintv.wildhitz"
         },
@@ -17,15 +26,6 @@
             "PACKAGE_NAME": "com.sensestudios.zoomintv.wildhitz"
         },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.sensestudios.zoomintv.wildhitz"
-        },
-        "cordova-plugin-geolocation": {
-            "PACKAGE_NAME": "com.sensestudios.zoomintv.wildhitz"
-        },
-        "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "com.sensestudios.zoomintv.wildhitz"
-        },
-        "cordova-plugin-media": {
             "PACKAGE_NAME": "com.sensestudios.zoomintv.wildhitz"
         },
         "pushwoosh-cordova-plugin": {
