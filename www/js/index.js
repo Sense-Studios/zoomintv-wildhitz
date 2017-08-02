@@ -25,14 +25,13 @@ function initPushwoosh() {
   // Should be called before pushwoosh.onDeviceReady
   document.addEventListener('push-notification', function(event) {
     var notification = event.notification;
-    // handle push open here
-    console.log("has notification", event)
+    console.log("has notification", event) // handle push open here
   });
 
   // Initialize Pushwoosh. This will trigger all pending push notifications on start.
   pushwoosh.onDeviceReady({
     appid: "EFE85-B7D2B",
-    projectid: "909405246969",    // android only, note thisis project number, not id!
+    projectid: "909405246969",       // android only, note thisis project number, not id!
     serviceName: "MPNS_SERVICE_NAME" // windows only
   });
 
@@ -65,24 +64,20 @@ var app = {
         // should be called before pushwoosh.onDeviceReady
         document.addEventListener('push-notification', function(event) {
           var notification = event.notification;
+          console.log("push has received something")
           // handle push open here
-          console.log("push has received etwas")
-          // alert("you have received a push event and opens")
         });
 
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
+
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-
-        //var url = "http://wildhitz.nl"
-        //var url = "http://wildhitz.nl/wildhitzplayer/#/267e0609b3e6832fe9378ac5642bb209"
-        //var url = "http://wildhitz.nl/ios.html"
-        var url = "http://wildhitz.com"
+        var url = "http://wildhitz.com?source=app"
         console.log("load: ", url)
         $.ajax({
             url: url,
@@ -103,15 +98,10 @@ var app = {
         console.log('now, init push')
         initPushwoosh();
     },
+
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
-        //var listeningElement = parentElement.querySelector('.listening');
-        //var receivedElement = parentElement.querySelector('.received');
-
-        //listeningElement.setAttribute('style', 'display:none;');
-        //receivedElement.setAttribute('style', 'display:block;');
-
         console.log('Received Event: ' + id);
     }
 };
